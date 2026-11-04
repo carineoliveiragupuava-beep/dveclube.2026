@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de Senha</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; background: #f4f4f9; }
+        .box { background: white; padding: 20px; border-radius: 8px; display: inline-block; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        button { background: #007BFF; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        button:hover { background: #0056b3; }
+        #resultado { margin-top: 15px; font-weight: bold; font-size: 18px; color: #333; word-wrap: break-word; max-width: 300px; }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h2>Gerador de Senhas</h2>
+        <p>Tamanho da senha: 
+            <input type="number" id="tamanho" value="12" min="4" max="30" style="width: 50px; padding: 5px;">
+        </p>
+        <button onclick="gerarSenha()">Gerar Senha</button>
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        function gerarSenha() {
+            const tamanho = document.getElementById('tamanho').value;
+            const caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
+            let senha = '';
+            
+            for (let i = 0; i < tamanho; i++) {
+                const indiceAleatorio = Math.floor(Math.random() * caracteres.length);
+                senha += caracteres.charAt(indiceAleatorio);
+            }
+            
+            document.getElementById('resultado').innerText = senha;
+        }
+    </script>
+
+</body>
+</html>

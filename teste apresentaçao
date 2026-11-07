@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha primeira pagina</title>
+</head>
+<body>
+    <h1>Olá, sou Carine</h1>
+
+<h2>Quem sou eu </h2>
+<p>Olá eu me chamo carine  tenho 35 anos sou casasda e tenho dois filhos</p>
+
+<ul>
+<li>Ajudar minha familia </li>
+<li>Conseguir um emprego</li>
+<li>Comprar uma casa</li>
+</ul>
+
+<a href="mailto:carine.olivira.gupuava@gmail.com" target="-blank">Meu email:</a>
+<h3>Pessoas que eu gostaria que estivessem no Devclub</h3>
+
+<ol>
+<li>Meu marido</li>
+<li>Meus filhos</li>
+<li>Subrinho</li>
+</ol>
+
+<img src="./eu.jpeg"alt="Foto da Carine."heit="200px"
+width="140px">
+</body>
+</html>
